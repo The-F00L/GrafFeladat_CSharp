@@ -20,7 +20,34 @@ namespace GrafFeladat_CSharp
             graf.Hozzaad(4, 5);
             graf.Hozzaad(2, 4);
 
+
             Console.WriteLine(graf);
+
+
+            Console.WriteLine("\n");
+            Console.WriteLine("Szélességi:");
+            graf.SzelessegiBejar(3);
+            Console.WriteLine("\n");
+            Console.WriteLine("Mélységi:");
+            graf.MelysegiBejar(5);
+            Console.WriteLine("\n");
+            Console.Write("Összefüggőség:");
+            if (graf.Osszefuggo() == true)
+            {
+                Console.WriteLine(" Összefüggő.");
+            }
+            else
+            {
+                Console.WriteLine(" Nem összefüggő.");
+            }
+            Console.WriteLine("\n");
+            Console.WriteLine("Feszítőfa: ");
+            graf.Feszitofa();
+           // Console.WriteLine("\n");
+           //Console.WriteLine("Mohoszinezes: ");
+           //graf.Mohoszinezes()...;   HIBÁS
+
+
             Console.ReadLine();
         }
     }
